@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		86D28F742246688C00B1CA1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F732246688C00B1CA1A /* AppDelegate.swift */; };
 		86D28F762246688C00B1CA1A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F752246688C00B1CA1A /* FirstViewController.swift */; };
-		86D28F782246688C00B1CA1A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F772246688C00B1CA1A /* SecondViewController.swift */; };
 		86D28F7B2246688C00B1CA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D28F792246688C00B1CA1A /* Main.storyboard */; };
 		86D28F7D2246688D00B1CA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D28F7C2246688D00B1CA1A /* Assets.xcassets */; };
 		86D28F802246688D00B1CA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D28F7E2246688D00B1CA1A /* LaunchScreen.storyboard */; };
 		86D28F8B2246688D00B1CA1A /* BetterLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F8A2246688D00B1CA1A /* BetterLifeTests.swift */; };
 		86D28F962246688D00B1CA1A /* BetterLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F952246688D00B1CA1A /* BetterLifeUITests.swift */; };
+		FD4F3FAA2246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FA92246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift */; };
+		FD4F3FAC2246D1E8009B3B70 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FAB2246D1E8009B3B70 /* CellCollectionViewCell.swift */; };
+		FD4F3FAE2246D518009B3B70 /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		86D28F702246688B00B1CA1A /* BetterLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D28F732246688C00B1CA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D28F752246688C00B1CA1A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		86D28F772246688C00B1CA1A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		86D28F7A2246688C00B1CA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86D28F7C2246688D00B1CA1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86D28F7F2246688D00B1CA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		86D28F912246688D00B1CA1A /* BetterLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D28F952246688D00B1CA1A /* BetterLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterLifeUITests.swift; sourceTree = "<group>"; };
 		86D28F972246688D00B1CA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4F3FA92246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
+		FD4F3FAB2246D1E8009B3B70 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
+		FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		86D28F672246688B00B1CA1A = {
 			isa = PBXGroup;
 			children = (
+				FD4F3FAB2246D1E8009B3B70 /* CellCollectionViewCell.swift */,
 				86D28F722246688B00B1CA1A /* BetterLife */,
 				86D28F892246688D00B1CA1A /* BetterLifeTests */,
 				86D28F942246688D00B1CA1A /* BetterLifeUITests */,
@@ -101,11 +106,12 @@
 			children = (
 				86D28F732246688C00B1CA1A /* AppDelegate.swift */,
 				86D28F752246688C00B1CA1A /* FirstViewController.swift */,
-				86D28F772246688C00B1CA1A /* SecondViewController.swift */,
 				86D28F792246688C00B1CA1A /* Main.storyboard */,
 				86D28F7C2246688D00B1CA1A /* Assets.xcassets */,
 				86D28F7E2246688D00B1CA1A /* LaunchScreen.storyboard */,
 				86D28F812246688D00B1CA1A /* Info.plist */,
+				FD4F3FA92246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift */,
+				FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */,
 			);
 			path = BetterLife;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86D28F782246688C00B1CA1A /* SecondViewController.swift in Sources */,
+				FD4F3FAE2246D518009B3B70 /* eventsViewController.swift in Sources */,
 				86D28F742246688C00B1CA1A /* AppDelegate.swift in Sources */,
+				FD4F3FAA2246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift in Sources */,
+				FD4F3FAC2246D1E8009B3B70 /* CellCollectionViewCell.swift in Sources */,
 				86D28F762246688C00B1CA1A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H7LZ4RUB86;
+				DEVELOPMENT_TEAM = Y7QV2T4CBB;
 				INFOPLIST_FILE = BetterLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H7LZ4RUB86;
+				DEVELOPMENT_TEAM = Y7QV2T4CBB;
 				INFOPLIST_FILE = BetterLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
