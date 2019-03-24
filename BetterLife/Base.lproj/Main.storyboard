@@ -378,89 +378,35 @@
         <!--Account Info-->
         <scene sceneID="V48-2A-GtH">
             <objects>
-                <viewController title="Account Info" id="L6X-QZ-WLy" customClass="AccountVC" customModule="BetterLife" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Account Info" id="L6X-QZ-WLy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3n-EU-tyU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LQ-6t-vfI">
-                                <rect key="frame" x="170.5" y="489" width="34" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveData:" destination="L6X-QZ-WLy" eventType="touchUpInside" id="U3r-d7-iOX"/>
-                                    <segue destination="Cpf-4Q-jm2" kind="presentation" id="d1x-7W-pny"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9sl-Ik-22f">
-                                <rect key="frame" x="98" y="235" width="179" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YcH-Ty-yRd">
-                                <rect key="frame" x="98" y="170" width="179" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="0.18994158202834874" green="0.81874792771883287" blue="0.37642139696101101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="VwE-P3-QlZ" firstAttribute="trailing" secondItem="9sl-Ik-22f" secondAttribute="trailing" constant="98" id="EKC-VX-i7V"/>
-                            <constraint firstItem="9sl-Ik-22f" firstAttribute="leading" secondItem="VwE-P3-QlZ" secondAttribute="leading" constant="98" id="J3l-Tg-cSX"/>
-                            <constraint firstItem="YcH-Ty-yRd" firstAttribute="centerX" secondItem="6LQ-6t-vfI" secondAttribute="centerX" id="Plu-p9-II0"/>
-                            <constraint firstItem="YcH-Ty-yRd" firstAttribute="trailing" secondItem="9sl-Ik-22f" secondAttribute="trailing" id="UOH-HC-DYU"/>
-                            <constraint firstItem="YcH-Ty-yRd" firstAttribute="top" secondItem="VwE-P3-QlZ" secondAttribute="top" constant="106" id="WDN-tD-UDd"/>
-                            <constraint firstItem="YcH-Ty-yRd" firstAttribute="leading" secondItem="VwE-P3-QlZ" secondAttribute="leading" constant="98" id="oTF-yc-VRq"/>
-                            <constraint firstItem="6LQ-6t-vfI" firstAttribute="top" secondItem="9sl-Ik-22f" secondAttribute="bottom" constant="224" id="t0X-Vd-yEW"/>
-                            <constraint firstItem="9sl-Ik-22f" firstAttribute="top" secondItem="YcH-Ty-yRd" secondAttribute="bottom" constant="35" id="udK-fH-q3Y"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="VwE-P3-QlZ"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Account Info" id="2vJ-15-Qft"/>
-                    <navigationItem key="navigationItem" id="fzF-Cy-3bX"/>
-                    <connections>
-                        <outlet property="email" destination="9sl-Ik-22f" id="Nem-2B-11b"/>
-                        <outlet property="name" destination="YcH-Ty-yRd" id="aOv-HP-1kf"/>
-                        <outlet property="saveButton" destination="6LQ-6t-vfI" id="jLT-LA-9SM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5de-5e-9Lx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1472.8" y="-104.7976011994003"/>
-        </scene>
-        <!--AccountVC-->
-        <scene sceneID="iZl-hb-CMt">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cIO-vn-DRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Cpf-4Q-jm2" customClass="AccountVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ejB-Yp-P6o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNC-db-4bX">
-                                <rect key="frame" x="43" y="124" width="105" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SARAH IS DUMB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQH-PC-HZO">
+                                <rect key="frame" x="39" y="161" width="206" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sarah@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEO-Nk-zYm">
+                                <rect key="frame" x="37" y="217" width="208" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="JiG-Pd-jcb"/>
+                        <color key="backgroundColor" red="0.18994158202834874" green="0.81874792771883287" blue="0.37642139696101101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="VwE-P3-QlZ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7yg-oI-1S5">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="WSk-xY-tW5"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="Name" destination="VNC-db-4bX" id="L2u-G8-9OD"/>
-                        <outlet property="nameText" destination="VNC-db-4bX" id="3rf-tj-uOf"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Account Info" id="2vJ-15-Qft"/>
+                    <navigationItem key="navigationItem" id="fzF-Cy-3bX"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5de-5e-9Lx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2389.5999999999999" y="-131.78410794602701"/>
+            <point key="canvasLocation" x="1472.8" y="-104.7976011994003"/>
         </scene>
         <!--Community-->
         <scene sceneID="kfy-ZR-EgH">

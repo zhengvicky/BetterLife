@@ -79,7 +79,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
     }
     
     func fetchRecipes(completion: (([Recipe]) -> Void)? = nil) {
-        let url = "https://www.food2fork.com/api/search?key=3cc31acb0cd37dda6ad985360cb79d3f&q=chicken%20breast"
+        let url = "https://www.food2fork.com/api/search?key=3cc31acb0cd37dda6ad985360cb79d3f&q=Organic"
         let urlObj = URL(string: url)
         
         URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
