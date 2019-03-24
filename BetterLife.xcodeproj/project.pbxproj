@@ -21,6 +21,7 @@
 		86DC40E9224745EB003896B9 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC40E8224745EB003896B9 /* Form.swift */; };
 		86DC40EB2247529B003896B9 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC40EA2247529B003896B9 /* ActivityData.swift */; };
 		86DC40ED22475351003896B9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC40EC22475351003896B9 /* CalendarViewController.swift */; };
+		86DC40EF224783D3003896B9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC40EE224783D3003896B9 /* AccountVC.swift */; };
 		FD4F3FAA2246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FA92246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift */; };
 		FD4F3FAC2246D1E8009B3B70 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FAB2246D1E8009B3B70 /* CellCollectionViewCell.swift */; };
 		FD4F3FAE2246D518009B3B70 /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */; };
@@ -64,6 +65,7 @@
 		86DC40E8224745EB003896B9 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		86DC40EA2247529B003896B9 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
 		86DC40EC22475351003896B9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		86DC40EE224783D3003896B9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		FD4F3FA92246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		FD4F3FAB2246D1E8009B3B70 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				869769D32247424500D88B54 /* Activities.swift */,
 				86DC40E8224745EB003896B9 /* Form.swift */,
 				86DC40EA2247529B003896B9 /* ActivityData.swift */,
+				86DC40EE224783D3003896B9 /* AccountVC.swift */,
 			);
 			path = BetterLife;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				86D28F742246688C00B1CA1A /* AppDelegate.swift in Sources */,
 				869769CE2246E90900D88B54 /* recipesAPI.swift in Sources */,
 				869769D42247424500D88B54 /* Activities.swift in Sources */,
+				86DC40EF224783D3003896B9 /* AccountVC.swift in Sources */,
 				FD4F3FAA2246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift in Sources */,
 				86DC40E9224745EB003896B9 /* Form.swift in Sources */,
 				FD4F3FAC2246D1E8009B3B70 /* CellCollectionViewCell.swift in Sources */,

@@ -20,6 +20,7 @@ class FormViewController : UIViewController {
     @IBOutlet weak var activityField: UITextField!
     @IBOutlet weak var weekdayPicker: UIPickerView!
     @IBOutlet weak var topImage: UIImageView!
+    @IBOutlet weak var successText: UILabel!
     
     var pageTitle: String?
     var nosePicker: [String] = ["Monday", "Tuesday", "Wednesday", "Tuesday", "Friday", "Saturday", "Sunday"]
@@ -63,6 +64,7 @@ class FormViewController : UIViewController {
         let event = Event.init(activity: pickedActivity, weekday: pickedWeekday)
         
         ActivityData.shared.allActivities.append(event)
+        successText.text = "Success!"
     }
 }
 
