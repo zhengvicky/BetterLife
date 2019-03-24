@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		869769CE2246E90900D88B54 /* recipesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869769CD2246E90900D88B54 /* recipesAPI.swift */; };
 		869769D022470D3A00D88B54 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869769CF22470D3A00D88B54 /* utilities.swift */; };
+		869769D222471D8100D88B54 /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869769D122471D8100D88B54 /* Navigate.swift */; };
+		869769D42247424500D88B54 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869769D32247424500D88B54 /* Activities.swift */; };
 		86D28F742246688C00B1CA1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F732246688C00B1CA1A /* AppDelegate.swift */; };
 		86D28F762246688C00B1CA1A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F752246688C00B1CA1A /* FirstViewController.swift */; };
 		86D28F7B2246688C00B1CA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D28F792246688C00B1CA1A /* Main.storyboard */; };
@@ -16,6 +18,9 @@
 		86D28F802246688D00B1CA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D28F7E2246688D00B1CA1A /* LaunchScreen.storyboard */; };
 		86D28F8B2246688D00B1CA1A /* BetterLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F8A2246688D00B1CA1A /* BetterLifeTests.swift */; };
 		86D28F962246688D00B1CA1A /* BetterLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F952246688D00B1CA1A /* BetterLifeUITests.swift */; };
+		86DC40E9224745EB003896B9 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC40E8224745EB003896B9 /* Form.swift */; };
+		86DC40EB2247529B003896B9 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC40EA2247529B003896B9 /* ActivityData.swift */; };
+		86DC40ED22475351003896B9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC40EC22475351003896B9 /* CalendarViewController.swift */; };
 		FD4F3FAA2246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FA92246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift */; };
 		FD4F3FAC2246D1E8009B3B70 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FAB2246D1E8009B3B70 /* CellCollectionViewCell.swift */; };
 		FD4F3FAE2246D518009B3B70 /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */; };
@@ -41,6 +46,8 @@
 /* Begin PBXFileReference section */
 		869769CD2246E90900D88B54 /* recipesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipesAPI.swift; sourceTree = "<group>"; };
 		869769CF22470D3A00D88B54 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		869769D122471D8100D88B54 /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
+		869769D32247424500D88B54 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		86D28F702246688B00B1CA1A /* BetterLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D28F732246688C00B1CA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D28F752246688C00B1CA1A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +61,9 @@
 		86D28F912246688D00B1CA1A /* BetterLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D28F952246688D00B1CA1A /* BetterLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterLifeUITests.swift; sourceTree = "<group>"; };
 		86D28F972246688D00B1CA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86DC40E8224745EB003896B9 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		86DC40EA2247529B003896B9 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
+		86DC40EC22475351003896B9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FD4F3FA92246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		FD4F3FAB2246D1E8009B3B70 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +121,7 @@
 				86D28F732246688C00B1CA1A /* AppDelegate.swift */,
 				86D28F752246688C00B1CA1A /* FirstViewController.swift */,
 				86D28F792246688C00B1CA1A /* Main.storyboard */,
+				86DC40EC22475351003896B9 /* CalendarViewController.swift */,
 				86D28F7C2246688D00B1CA1A /* Assets.xcassets */,
 				86D28F7E2246688D00B1CA1A /* LaunchScreen.storyboard */,
 				86D28F812246688D00B1CA1A /* Info.plist */,
@@ -118,6 +129,10 @@
 				FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */,
 				869769CD2246E90900D88B54 /* recipesAPI.swift */,
 				869769CF22470D3A00D88B54 /* utilities.swift */,
+				869769D122471D8100D88B54 /* Navigate.swift */,
+				869769D32247424500D88B54 /* Activities.swift */,
+				86DC40E8224745EB003896B9 /* Form.swift */,
+				86DC40EA2247529B003896B9 /* ActivityData.swift */,
 			);
 			path = BetterLife;
 			sourceTree = "<group>";
@@ -271,12 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DC40ED22475351003896B9 /* CalendarViewController.swift in Sources */,
+				869769D222471D8100D88B54 /* Navigate.swift in Sources */,
 				FD4F3FAE2246D518009B3B70 /* eventsViewController.swift in Sources */,
 				869769D022470D3A00D88B54 /* utilities.swift in Sources */,
 				86D28F742246688C00B1CA1A /* AppDelegate.swift in Sources */,
 				869769CE2246E90900D88B54 /* recipesAPI.swift in Sources */,
+				869769D42247424500D88B54 /* Activities.swift in Sources */,
 				FD4F3FAA2246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift in Sources */,
+				86DC40E9224745EB003896B9 /* Form.swift in Sources */,
 				FD4F3FAC2246D1E8009B3B70 /* CellCollectionViewCell.swift in Sources */,
+				86DC40EB2247529B003896B9 /* ActivityData.swift in Sources */,
 				86D28F762246688C00B1CA1A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

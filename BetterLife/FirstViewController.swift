@@ -37,45 +37,45 @@ class FirstViewController: UIViewController, UISearchBarDelegate {
             }
         }
         
-        let url = "http://quotes.rest/qod.json?category=inspire"
-        let urlObj = URL(string: url)
-        
-        URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
-            //   debugPrint(data)
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any]
-                if(json != nil) {
-                    let contents = json!["contents"] as! [String: Any]
-                    
-                    
-                    
-                    debugPrint(contents as Any)
-                    let quotes = contents["quotes"] as! [Any]
-                    print(quotes as Any)
-                    let firstElement = quotes[0] as! [String: Any]
-                    let quote = firstElement["quote"]
-                    //    for quote in quotes! {
-                    //        let q = quote as Any
-                    //        debugPrint(q)
-                    //  print(quote)
-                    //   }
-                }
-                
-            } catch {
-                print("error")
-            }
-            //            do {
-            //                let quotes = try JSONDecoder().decode([Quote].self, from: data!)
-            //                debugPrint(quotes)
-            //                for quote in quotes {
-            //                    print(quote.quote)
-            //                }
-            //
-            //            } catch let error {
-            //                print(error)
-            //            }
-            
-            }.resume()
+//        let url = "http://quotes.rest/qod.json?category=inspire"
+//        let urlObj = URL(string: url)
+//
+//        URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
+//            //   debugPrint(data)
+//            do {
+//                let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any]
+//                if(json != nil) {
+//                    let contents = json!["contents"] as! [String: Any]
+//
+//
+//
+//                    debugPrint(contents as Any)
+//                    let quotes = contents["quotes"] as! [Any]
+//                    print(quotes as Any)
+//                    let firstElement = quotes[0] as! [String: Any]
+//                    let quote = firstElement["quote"]
+//                    //    for quote in quotes! {
+//                    //        let q = quote as Any
+//                    //        debugPrint(q)
+//                    //  print(quote)
+//                    //   }
+//                }
+//
+//            } catch {
+//                print("error")
+//            }
+//            //            do {
+//            //                let quotes = try JSONDecoder().decode([Quote].self, from: data!)
+//            //                debugPrint(quotes)
+//            //                for quote in quotes {
+//            //                    print(quote.quote)
+//            //                }
+//            //
+//            //            } catch let error {
+//            //                print(error)
+//            //            }
+//
+//            }.resume()
     }
     
     func fetchRecipes(completion: (([Recipe]) -> Void)? = nil) {
