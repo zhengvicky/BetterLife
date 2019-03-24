@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		869769CE2246E90900D88B54 /* recipesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869769CD2246E90900D88B54 /* recipesAPI.swift */; };
+		869769D022470D3A00D88B54 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869769CF22470D3A00D88B54 /* utilities.swift */; };
 		86D28F742246688C00B1CA1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F732246688C00B1CA1A /* AppDelegate.swift */; };
 		86D28F762246688C00B1CA1A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D28F752246688C00B1CA1A /* FirstViewController.swift */; };
 		86D28F7B2246688C00B1CA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D28F792246688C00B1CA1A /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		869769CD2246E90900D88B54 /* recipesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipesAPI.swift; sourceTree = "<group>"; };
+		869769CF22470D3A00D88B54 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 		86D28F702246688B00B1CA1A /* BetterLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D28F732246688C00B1CA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D28F752246688C00B1CA1A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				FD4F3FA92246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift */,
 				FD4F3FAD2246D518009B3B70 /* eventsViewController.swift */,
 				869769CD2246E90900D88B54 /* recipesAPI.swift */,
+				869769CF22470D3A00D88B54 /* utilities.swift */,
 			);
 			path = BetterLife;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4F3FAE2246D518009B3B70 /* eventsViewController.swift in Sources */,
+				869769D022470D3A00D88B54 /* utilities.swift in Sources */,
 				86D28F742246688C00B1CA1A /* AppDelegate.swift in Sources */,
 				869769CE2246E90900D88B54 /* recipesAPI.swift in Sources */,
 				FD4F3FAA2246C54A009B3B70 /* SecondViewControllerCollectionViewController.swift in Sources */,

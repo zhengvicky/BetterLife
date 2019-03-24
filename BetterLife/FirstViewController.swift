@@ -13,14 +13,28 @@ struct Quote: Decodable {
     let author: String
 }
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UISearchBarDelegate {
+    
+    let cellReuseIdentifier = "RecipeCell"
+
+    @IBOutlet weak var tableView: UITableView!
+    var RecipeData: [Recipe] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.tableView.rowHeight = 100
+        
         fetchRecipes() { recipes in
             print("Yo dawg. come get your watermelon! \(recipes[0])")
+            self.RecipeData = recipes
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
         
         let url = "http://quotes.rest/qod.json?category=inspire"
@@ -84,5 +98,30 @@ class FirstViewController: UIViewController {
             }.resume()
     }
     
+}
+
+extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard !RecipeData.isEmpty else { return UITableViewCell() }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
+        let recipe = RecipeData[indexPath.row]
+        cell.textLabel?.text = recipe.title
+        cell.detailTextLabel?.text = recipe.publisher
+        var imageUrl = recipe.image_url
+        
+        // str.substring(3)
+        imageUrl.insert("s", at: imageUrl.index(imageUrl.startIndex, offsetBy: 4))
+        
+        cell.imageView?.imageFromUrl(urlString: imageUrl)
+        return cell
+    }
+
 }
 
